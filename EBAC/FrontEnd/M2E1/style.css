@@ -1,0 +1,26 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.formTitle {
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+.form {
+    font-size: 20px;
+    margin: 3rem;
+}
+
+.footerInfo {
+    font-size: 15px;
+    margin: 3rem;
+}
