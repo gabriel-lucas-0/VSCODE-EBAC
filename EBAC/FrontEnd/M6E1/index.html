@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Jogo de Adivinha</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo de Adivinha</h1>
+      <div class="description">
+        <p>
+          O jogo irá gerar um número aleatório entre 1 e 100, e o jogador terá
+          que adivinhar qual é esse número. O jogo dará dicas ao jogador,
+          dizendo se o número chutado é maior ou menor que o número secreto. O
+          jogo termina quando o jogador acertar o número ou quando ele atingir
+          um número máximo de tentativas.
+        </p>
+      </div>
+    </header>
+    <label for="guess">Digite seu palpite</label>
+    <input type="number" id="guess" />
+    <div></div>
+    <button id="submitGuess">Chutar</button>
+    <div></div>
+    <p class="gameMessage"></p>
+    <p class="guessesLeft"></p>
+  </body>
+</html>
