@@ -9,21 +9,19 @@
   </head>
   <body>
     <header>
-      <h1>Lista de Tarefas</h1>
+      <h1>Cadastro de Clientes</h1>
     </header>
     <main>
-      <section class="task-input">
-        <input
-          type="text"
-          id="taskInput"
-          placeholder="Adicione uma nova tarefa"
-        />
-        <button id="addTaskButton">Adicionar</button>
-      </section>
-      <section class="task-list">
-        <ul id="taskList">
-
-        </ul>
+      <form class="client-form">
+        <label for="clientName">Nome do Cliente</label>
+        <input type="text" id="clientName" placeholder="Nome do Cliente" />
+        <label for="clientEmail">Email do Cliente</label>
+        <input type="text" id="clientEmail" placeholder="Email do Cliente" />
+        <button type="submit" id="submitInfo">Cadastrar</button>
+      </form>
+      <h1>Lista de Clientes</h1>
+      <section class="client-list">
+        <ul id="clientList"></ul>
       </section>
     </main>
   </body>
