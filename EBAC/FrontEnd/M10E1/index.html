@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./JS/main.js" defer></script>
+    <title>Lista</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de Clientes</h1>
+    </header>
+    <main>
+      <form class="client-form">
+        <label for="clientName">Nome do Cliente</label>
+        <input type="text" id="clientName" placeholder="Nome do Cliente" />
+        <label for="clientEmail">Email do Cliente</label>
+        <input type="text" id="clientEmail" placeholder="Email do Cliente" />
+        <button type="submit" id="submitInfo">Cadastrar</button>
+      </form>
+      <h1>Lista de Clientes</h1>
+      <section class="client-list">
+        <ul id="clientList"></ul>
+      </section>
+    </main>
+  </body>
+</html>
