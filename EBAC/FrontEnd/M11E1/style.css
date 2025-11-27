@@ -1,0 +1,172 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e2e2e;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+@media (min-width: 1440px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section h2, h1 {
+        padding-bottom: 0.75rem;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-us, .testimony {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #e0e0e0 !important;
+    }
+
+    header {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #2e2e2e;
+        box-shadow: 0.1px 5px 5px grey;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        list-style: none;
+    }
+
+    ul a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 5%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    input {
+        width: 20%;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    #sendButton {
+        background-color: black;
+        color: white;
+        width: 5%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #sendButton:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section h2, h1 {
+        padding-bottom: 0.75rem;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-us, .testimony {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #e0e0e0 !important;
+    }
+
+    header {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #2e2e2e;
+        box-shadow: 0.1px 5px 5px grey;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        list-style: none;
+    }
+
+    ul a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 25%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    input {
+        width: 75%;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    #sendButton {
+        background-color: black;
+        color: white;
+        width: 25%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+}
