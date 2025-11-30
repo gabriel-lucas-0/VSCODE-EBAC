@@ -1,0 +1,13 @@
+@mixin center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin responsive-size($desktop, $mobile) {
+  width: $mobile;
+
+  @media (min-width: 1440px) {
+    width: $desktop;
+  }
+}

@@ -1,0 +1,39 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
+.header {
+  @include center-column;
+  width: 100%;
+  padding-top: $spacing-md;
+  border-bottom: 1px solid $color-dark;
+  box-shadow: 0 5px 5px grey;
+
+  &__logo {
+    @include responsive-size(5%, 25%);
+  }
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: $spacing-md 0;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.section {
+  text-align: center;
+  padding: $spacing-lg $spacing-md;
+
+  &__title {
+    margin-bottom: $spacing-sm;
+  }
+
+  &--about,
+  &--testimony {
+    background-color: $color-gray;
+  }
+}

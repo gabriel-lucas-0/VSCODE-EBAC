@@ -1,0 +1,25 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
+.form {
+  @include center-column;
+  gap: $spacing-sm;
+
+  &__input {
+    @include responsive-size(20%, 75%);
+    padding: .25rem;
+  }
+
+  &__button {
+    @include responsive-size(5%, 25%);
+    padding: .5rem;
+    background: black;
+    color: white;
+
+    &:hover {
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
