@@ -1,0 +1,95 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e2e2e;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+
+/* HEADER */
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: 1px solid #2e2e2e;
+    box-shadow: 0 5px 5px grey;
+}
+
+.header__logo {
+    width: 80px;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+
+/* SECTION BASE */
+.section {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.section__title {
+    margin-bottom: 0.75rem;
+}
+
+.section--about,
+.section--testimony {
+    background-color: #e0e0e0;
+}
+
+
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.form__input {
+    width: 300px;
+    padding: .25rem;
+}
+
+.form__button {
+    width: 120px;
+    padding: .5rem;
+    background: black;
+    color: white;
+}
+
+.form__button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 1440px) {
+    .header__logo { width: 5%; }
+    .form__input { width: 20%; }
+    .form__button { width: 5%; }
+}
+
+@media (max-width: 375px) {
+    .header__logo { width: 25%; }
+    .form__input { width: 75%; }
+    .form__button { width: 25%; }
+}
