@@ -1,0 +1,204 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* ===== HEADER ===== */
+h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* ===== FORM ===== */
+form,
+.add-task-form {
+  display: flex;
+  width: 100%;
+  background: #1e1e1e;
+  border-radius: 6px;
+  border: 1px solid #333;
+  overflow: hidden;
+  margin-bottom: 25px !important;
+}
+
+input[type="text"],
+.add-task-form input {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  outline: none;
+  background: #1e1e1e;
+  color: #ddd;
+  font-size: 16px;
+}
+
+button[type="submit"],
+.add-task-form button {
+  padding: 14px 22px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+button[type="submit"]:hover,
+.add-task-form button:hover {
+  background: #45a049;
+}
+
+/* ===== FILTROS ===== */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px !important;
+}
+
+.filters button {
+  padding: 8px 14px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filters button:hover,
+.filters button.active {
+  background: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+/* ===== LISTA ===== */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* ===== ITEM ===== */
+.task-item {
+  background: #1e1e1e;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.task-item:hover {
+  background: #1c1c1c;
+}
+
+/* Quando concluída */
+.task-item.completed {
+  border-color: #4CAF50;
+  background: #162616;
+}
+
+.task-item.completed .task-text {
+  color: #82e082;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+/* ===== ESTRUTURA DO ITEM ===== */
+
+/* Área esquerda: checkbox + texto */
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0; /* permite quebra correta no flex */
+}
+
+/* Checkbox */
+.task-left input[type="checkbox"] {
+  transform: scale(1.05);
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Texto */
+.task-text {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+/* ===== BOTÕES ===== */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* evita que os botões quebrem para a linha de baixo */
+.task-actions button {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Botão concluir */
+.complete-btn {
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.complete-btn:hover {
+  background: #1e88e5;
+}
+
+/* Botão remover */
+.delete-btn {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
