@@ -1,12 +1,40 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --bg-main: #0F172A;
+  --bg-card: #111827;
+
+  --text-primary: #F9FAFB; 
+  --text-secondary: #D1D5DB; 
+
+  --border-default: #1F2937;
+
+  --primary: #F97316;
+  --primary-hover: #EA580C;
+
+  --success: #22C55E;
+  --success-hover: #16A34A;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
 }

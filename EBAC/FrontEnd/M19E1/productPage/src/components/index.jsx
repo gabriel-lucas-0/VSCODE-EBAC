@@ -1,19 +1,31 @@
 import React from "react";
-import { Button, Card, Price, Title, Container } from "./styles.js";
+import { Card, Title, Price, Button, Container } from "./styles";
 
-export default function ProductCard() {
-    const [added, setAdded] = React.useState(false);
+export default function ProductCard({ title, price, image }) {
+  const [adicionado, setAdicionado] = React.useState(false);
 
   return (
-    <div>
-      <img src="https://placehold.co/300x150" alt="placeholder" style={{borderRadius: '10px'}}/>
-      <Title>Telha Cerâmica Premium</Title>
-      <Container>
-        <Price>Preço: $129.9</Price>
+    <Card>
+      <img
+        src={image}
+        alt={title}
+        style={{ width: "100%", borderRadius: "6px" }}
+      />
+
+      <Title>{title}</Title>
+
+      <Container style={{ flex: 1 }}>
+        <Price>{price}</Price>
       </Container>
+
       <Container>
-        <Button added={added} onClick={() => setAdded(!added)}>{added ? "Adicionado" : "Adicionar ao Carrinho"}</Button>
+        <Button
+          adicionado={adicionado}
+          onClick={() => setAdicionado(!adicionado)}
+        >
+          {adicionado ? "Adicionado" : "Adicionar ao Carrinho"}
+        </Button>
       </Container>
-    </div>
+    </Card>
   );
 }
