@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tema geral */
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container principal */
+.container {
+  margin-top: 50px;
+  width: 420px;
+  background: #161625;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #c7c7ff;
+}
+
+/* Input de nova tarefa */
+.input-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2f2f4f;
+  background: #0f0f1a;
+  color: #ffffff;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.input-container input::placeholder {
+  color: #8b8bbd;
+}
+
+.input-container input:focus {
+  border-color: #7c7cff;
+}
+
+/* Botões (base) */
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  background: #2f2f4f;
+  color: #ffffff;
+}
+
+button:hover {
+  background: #4a4a8a;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Botão adicionar */
+.input-container button {
+  background: #6a5cff;
+}
+
+.input-container button:hover {
+  background: #8478ff;
+}
+
+/* Filtros */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.filters button {
+  flex: 1_toggle;
+  background: #24243a;
+  border: 1px solid #2f2f4f;
+}
+
+.filters button.active {
+  background: #6a5cff;
+  border-color: #6a5cff;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+}
+
+/* Item da tarefa */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e33;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #2f2f4f;
+}
+
+li span {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+/* Tarefa concluída */
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Botões do item */
+li div {
+  display: flex;
+  gap: 6px;
+}
+
+li button {
+  padding: 6px 8px;
+  font-size: 0.75rem;
+}
+
+/* Botão concluir */
+li button:first-child {
+  background: #2ecc71;
+  color: #0b2e1a;
+}
+
+li button:first-child:hover {
+  background: #4be28a;
+}
+
+/* Botão remover */
+li button:last-child {
+  background: #e74c3c;
+  color: #2a0b08;
+}
+
+li button:last-child:hover {
+  background: #ff6b5c;
+}
