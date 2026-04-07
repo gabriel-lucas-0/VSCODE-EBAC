@@ -4,7 +4,7 @@ const servicos = [
 ];
 
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://blyad901901901_db_user:2gA1OsWneDZIq4PZ@teste.rlty91t.mongodb.net/")
+
     .then(() => console.log("Conectado ao MongooseDB."))
     .catch(err => console.error("Erro ao conectar ao MongooseDB.", err))
 
